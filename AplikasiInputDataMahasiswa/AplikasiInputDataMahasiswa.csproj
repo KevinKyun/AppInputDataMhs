@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{06691682-90EC-4D3D-922F-A943A5A3CE28}</ProjectGuid>
+    <ProjectGuid>{9BFD0F2B-1F91-4BF9-A437-0D75D6D32B4B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>AplikasiInputDataMahasiswa</RootNamespace>
     <AssemblyName>AplikasiInputDataMahasiswa</AssemblyName>

@@ -50,85 +50,86 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 13);
+            this.label1.Size = new System.Drawing.Size(31, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nim";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 42);
+            this.label2.Location = new System.Drawing.Point(12, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nama";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 68);
+            this.label3.Location = new System.Drawing.Point(12, 86);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.Size = new System.Drawing.Size(41, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Kelas";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 94);
+            this.label4.Location = new System.Drawing.Point(12, 124);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(27, 13);
+            this.label4.Size = new System.Drawing.Size(34, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Nilai";
             // 
             // txtNim
             // 
-            this.txtNim.Location = new System.Drawing.Point(53, 12);
+            this.txtNim.Location = new System.Drawing.Point(63, 10);
             this.txtNim.Name = "txtNim";
-            this.txtNim.Size = new System.Drawing.Size(100, 20);
+            this.txtNim.Size = new System.Drawing.Size(100, 22);
             this.txtNim.TabIndex = 4;
             // 
             // txtNama
             // 
-            this.txtNama.Location = new System.Drawing.Point(53, 38);
+            this.txtNama.Location = new System.Drawing.Point(63, 43);
             this.txtNama.Name = "txtNama";
-            this.txtNama.Size = new System.Drawing.Size(184, 20);
+            this.txtNama.Size = new System.Drawing.Size(189, 22);
             this.txtNama.TabIndex = 5;
             // 
             // txtKelas
             // 
-            this.txtKelas.Location = new System.Drawing.Point(53, 65);
+            this.txtKelas.Location = new System.Drawing.Point(62, 80);
             this.txtKelas.Name = "txtKelas";
-            this.txtKelas.Size = new System.Drawing.Size(100, 20);
+            this.txtKelas.Size = new System.Drawing.Size(100, 22);
             this.txtKelas.TabIndex = 6;
             // 
             // txtNilai
             // 
-            this.txtNilai.Location = new System.Drawing.Point(53, 91);
+            this.txtNilai.Location = new System.Drawing.Point(62, 121);
             this.txtNilai.Name = "txtNilai";
-            this.txtNilai.Size = new System.Drawing.Size(100, 20);
+            this.txtNilai.Size = new System.Drawing.Size(100, 22);
             this.txtNilai.TabIndex = 7;
             this.txtNilai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNilai_KeyPress);
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(15, 124);
+            this.btnSimpan.BackColor = System.Drawing.Color.LightGray;
+            this.btnSimpan.Location = new System.Drawing.Point(13, 160);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(75, 23);
+            this.btnSimpan.Size = new System.Drawing.Size(90, 25);
             this.btnSimpan.TabIndex = 8;
             this.btnSimpan.Text = "Simpan";
-            this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.UseVisualStyleBackColor = false;
             this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(96, 124);
+            this.btnReset.BackColor = System.Drawing.Color.LightGray;
+            this.btnReset.Location = new System.Drawing.Point(109, 160);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.Size = new System.Drawing.Size(88, 25);
             this.btnReset.TabIndex = 9;
             this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // groupBox1
@@ -136,9 +137,9 @@
             this.groupBox1.Controls.Add(this.lvwMahasiswa);
             this.groupBox1.Controls.Add(this.btnHapus);
             this.groupBox1.Controls.Add(this.btnTampilkanData);
-            this.groupBox1.Location = new System.Drawing.Point(243, 13);
+            this.groupBox1.Location = new System.Drawing.Point(258, 10);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(545, 425);
+            this.groupBox1.Size = new System.Drawing.Size(703, 486);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "[ Daftar Mahasiswa ]";
@@ -146,37 +147,39 @@
             // lvwMahasiswa
             // 
             this.lvwMahasiswa.HideSelection = false;
-            this.lvwMahasiswa.Location = new System.Drawing.Point(6, 55);
+            this.lvwMahasiswa.Location = new System.Drawing.Point(6, 61);
             this.lvwMahasiswa.Name = "lvwMahasiswa";
-            this.lvwMahasiswa.Size = new System.Drawing.Size(533, 364);
-            this.lvwMahasiswa.TabIndex = 11;
+            this.lvwMahasiswa.Size = new System.Drawing.Size(691, 418);
+            this.lvwMahasiswa.TabIndex = 12;
             this.lvwMahasiswa.UseCompatibleStateImageBehavior = false;
             // 
             // btnHapus
             // 
-            this.btnHapus.Location = new System.Drawing.Point(87, 23);
+            this.btnHapus.BackColor = System.Drawing.Color.LightGray;
+            this.btnHapus.Location = new System.Drawing.Point(148, 33);
             this.btnHapus.Name = "btnHapus";
-            this.btnHapus.Size = new System.Drawing.Size(75, 23);
-            this.btnHapus.TabIndex = 10;
+            this.btnHapus.Size = new System.Drawing.Size(85, 25);
+            this.btnHapus.TabIndex = 11;
             this.btnHapus.Text = "Hapus";
-            this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnHapus.UseVisualStyleBackColor = false;
             this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // btnTampilkanData
             // 
-            this.btnTampilkanData.Location = new System.Drawing.Point(6, 23);
+            this.btnTampilkanData.BackColor = System.Drawing.Color.LightGray;
+            this.btnTampilkanData.Location = new System.Drawing.Point(6, 32);
             this.btnTampilkanData.Name = "btnTampilkanData";
-            this.btnTampilkanData.Size = new System.Drawing.Size(75, 23);
-            this.btnTampilkanData.TabIndex = 9;
+            this.btnTampilkanData.Size = new System.Drawing.Size(136, 25);
+            this.btnTampilkanData.TabIndex = 11;
             this.btnTampilkanData.Text = "Tampilkan Data";
-            this.btnTampilkanData.UseVisualStyleBackColor = true;
+            this.btnTampilkanData.UseVisualStyleBackColor = false;
             this.btnTampilkanData.Click += new System.EventHandler(this.btnTampilkanData_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(965, 508);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSimpan);
@@ -190,8 +193,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Aplikasi Input Data Mahasiswa";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Aplikasi Input Data Mahasiswa (Adib Ramadhan)";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -211,9 +213,9 @@
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListView lvwMahasiswa;
         private System.Windows.Forms.Button btnHapus;
         private System.Windows.Forms.Button btnTampilkanData;
+        private System.Windows.Forms.ListView lvwMahasiswa;
     }
 }
 

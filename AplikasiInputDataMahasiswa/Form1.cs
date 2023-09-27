@@ -19,16 +19,6 @@ namespace AplikasiInputDataMahasiswa
             InisialisasiListView();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         // atur kolom listview
         private void InisialisasiListView()
         {
@@ -40,6 +30,7 @@ namespace AplikasiInputDataMahasiswa
             lvwMahasiswa.Columns.Add("Nama", 200, HorizontalAlignment.Left);
             lvwMahasiswa.Columns.Add("Kelas", 70, HorizontalAlignment.Center);
             lvwMahasiswa.Columns.Add("Nilai", 50, HorizontalAlignment.Center);
+            lvwMahasiswa.Columns.Add("Nilai Huruf", 50, HorizontalAlignment.Center);
         }
 
         private void ResetForm()
@@ -87,6 +78,31 @@ namespace AplikasiInputDataMahasiswa
             mhs.Nama = txtNama.Text;
             mhs.Kelas = txtKelas.Text;
             mhs.Nilai = int.Parse(txtNilai.Text);
+
+            if (mhs.Nilai <= 20)
+            {
+                mhs.NilaiHuruf = "E";
+            }
+            else if (mhs.Nilai <= 40)
+            {
+                mhs.NilaiHuruf = "D";
+            }
+            else if (mhs.Nilai <= 60)
+            {
+                mhs.NilaiHuruf = "C";
+            }
+            else if (mhs.Nilai <= 80)
+            {
+                mhs.NilaiHuruf = "B";
+            }
+            else if (mhs.Nilai <= 100)
+            {
+                mhs.NilaiHuruf = "A";
+            }
+            else if (mhs.Nilai > 100)
+            {
+                mhs.NilaiHuruf = "-";
+            }
             // tambahkan objek mahasiswa ke dalam collection
             list.Add(mhs);
             var msg = "Data mahasiswa berhasil disimpan.";
@@ -110,6 +126,7 @@ namespace AplikasiInputDataMahasiswa
                 item.SubItems.Add(mhs.Nama);
                 item.SubItems.Add(mhs.Kelas);
                 item.SubItems.Add(mhs.Nilai.ToString());
+                item.SubItems.Add(mhs.NilaiHuruf);
                 lvwMahasiswa.Items.Add(item);
             }
         }
@@ -143,7 +160,6 @@ namespace AplikasiInputDataMahasiswa
                 MessageBox.Show("Data mahasiswa belum dipilih !!!", "Peringatan",
                 MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
         }
     }
 }

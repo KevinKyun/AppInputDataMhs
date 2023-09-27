@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace AplikasiInputDataMahasiswa
 {
-    class Mahasiswa
+    public class Mahasiswa
     {
         public string Nim { get; set; }
         public string Nama { get; set; }
         public string Kelas { get; set; }
         public float Nilai { get; set; }
+        public string NilaiHuruf { get; set; }
+
+
     }
 }
